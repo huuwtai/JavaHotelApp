@@ -1,6 +1,7 @@
 # JavaHotelApp
 
 Hotel Management Application (Java & Firebase)
+
 Introduction
 Welcome to the Hotel Management Application project! This is an application built using the Java programming language and utilizes Firebase Database for hotel information management.
 
