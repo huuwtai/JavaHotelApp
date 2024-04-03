@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/Detail_Avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/double_bed" />
+
+    <ImageView
+        android:id="@+id/Detail_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back" />
+
+    <TextView
+        android:id="@+id/Detail_Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Phòng 01"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Detail_Avatar" />
+
+    <ImageView
+        android:id="@+id/Detail_star_point"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Detail_Header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Detail_Header"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/Detail_Star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+
+        android:text="4.5"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Detail_star_point"
+        app:layout_constraintEnd_toStartOf="@+id/Detail_star_point"
+        app:layout_constraintTop_toTopOf="@+id/Detail_star_point" />
+
+    <TextView
+        android:id="@+id/Detail_type_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/DetailTypeRoom"
+        android:textColor="#044363"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/Detail_Header"
+        app:layout_constraintTop_toBottomOf="@+id/Detail_Header"
+/>
+
+    <TextView
+        android:id="@+id/Detail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/DetailPrice"
+        android:textColor="#044363"
+        app:layout_constraintStart_toStartOf="@+id/Detail_type_room"
+        app:layout_constraintTop_toBottomOf="@+id/Detail_type_room" />
+
+    <TextView
+        android:id="@+id/Detail_type_room_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:text="Phòng giường đôi"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Detail_type_room"
+        app:layout_constraintStart_toEndOf="@+id/Detail_type_room"
+        app:layout_constraintTop_toTopOf="@+id/Detail_type_room" />
+
+    <TextView
+        android:id="@+id/Detail_price_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:text="$200"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Detail_price"
+        app:layout_constraintStart_toEndOf="@+id/Detail_price"
+        app:layout_constraintTop_toTopOf="@+id/Detail_price" />
+
+    <TextView
+        android:id="@+id/Detail_more_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/DetailMorePic"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="@+id/Detail_price"
+        app:layout_constraintTop_toBottomOf="@+id/Detail_price" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Detail_more_picture"
+        app:srcCompat="@drawable/free_things" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:srcCompat="@drawable/table_room" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:srcCompat="@drawable/bath_room" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/like" />
+
+    <Button
+        android:id="@+id/Detail_button"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/book_button_bg"
+        android:text="@string/DetailButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/Detail_About"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/DetailAbout"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Phòng được thiết kế sang trọng, đáp ứng mọi nhu cầu của quý khách. Ngoài ra với trang thiết bị nội thất hiện đại và tiện nghi sẽ mang lại cho quý khách phút giây trãi nghiệm tốt nhất"
+        app:layout_constraintBottom_toTopOf="@+id/Detail_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Detail_About"
+        app:layout_constraintTop_toBottomOf="@+id/Detail_About" />
+</androidx.constraintlayout.widget.ConstraintLayout>

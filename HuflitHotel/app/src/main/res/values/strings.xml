@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">HotelBookingProject</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    MainText-->
+    <string name="TimPhong">Tìm phòng</string>
+    <string name="TotNhat">Tốt Nhất Dành Cho Bạn</string>
+    <string name="SearchHint">Tìm kiếm tại đây</string>
+    <string name="Recent">Gần đây</string>
+    <string name="SeeAll">Xem tất cả</string>
+    <string name="TopPlaces">Phòng nổi bật</string>
+
+    <!--  End Main Text  -->
+    <!--    DetailText-->
+    <string name="DetailButton">Bắt đầu đặt phòng</string>
+    <string name="DetailTypeRoom">Loại phòng :</string>
+    <string name="DetailPrice">Giá phòng :</string>
+    <string name="DetailMorePic">Hình Ảnh :</string>
+    <string name="DetailAbout">Mô tả phòng :</string>
+    <!--    End Detail Text-->
+    <!--    LoginText-->
+    <string name="loginUserName">UserName</string>
+    <string name="loginPassWord">Password</string>
+    <!--    End Login Text-->
+    <!--Manager Activity -->
+    <string name="AddRoomTitle">Quản lý Phòng</string>
+    <!--    End Manager Activity-->
+</resources>
